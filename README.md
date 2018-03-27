@@ -1,4 +1,4 @@
-# _eccomerce_
+# _ecommerce_
 
 #### _A Ecommerce clothes shop_
 
