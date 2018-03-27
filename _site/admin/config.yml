@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: colorlessenergy/eccomerce # Path to your Github repository
+  repo: colorlessenergy/ecommerce # Path to your Github repository
 
 media_folder: "img"
 
