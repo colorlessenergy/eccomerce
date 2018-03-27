@@ -1,0 +1,39 @@
+---
+layout: all-products
+---
+
+<div class="container-shop">
+  <h2>Clothes</h2>
+  <div class="shop-container">
+    {% for item in site.women_clothes %}
+      {% if item.main %}
+      <div class="shop-item">
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          <img src="{{ site.baseurl }}{{ item.pic-url }}" alt="{{ item.title }}">
+          <h4>{{ item.type }}</h4>
+          <p>${{ item.price }}</p>
+        </a>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h2>Shoes</h2>
+  <div class="shop-container">
+    {% for item in site.women_shoe %}
+    {% if item.main %}
+
+    <div class="shop-item">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        <img src="{{ site.baseurl }}{{ item.pic-url }}" alt="{{ item.title }}">
+        <h4>{{ item.type }}</h4>
+        <p>${{ item.price }}</p>
+      </a>
+    </div>
+
+    {% endif %}
+
+    {% endfor %}
+  </div>
+
+</div>

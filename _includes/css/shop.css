@@ -1,0 +1,80 @@
+.container-shop {
+  padding: 30px 0;
+}
+
+.container-shop h2,
+.shop-item {
+  text-align: center;
+}
+
+.container-shop h2 {
+  margin-top: 0;
+}
+
+.shop-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.shop-item {
+  position: relative;
+  width: 300px;
+}
+
+.shop-item:after {
+  content: 'buy now';
+  position: absolute;
+  top: 30%;
+  right: 18%;
+  width: 56%;
+  height: 40px;
+  background-color: #c9192e;
+
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition: opacity 0.5s;
+}
+
+.shop-item:hover:after {
+  opacity: 1;
+}
+
+.shop-item a {
+  color: #000;
+  display: block;
+  text-decoration: none;
+}
+
+.shop-item img {
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+  height: 200px;
+}
+
+.shop-item p {
+  color: #c9192e;
+}
+
+.shop-item h4 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.shop-item h4 a {
+  color: #222;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  .shop-item img {
+    width: 100%;
+    height: unset;
+  }
+}

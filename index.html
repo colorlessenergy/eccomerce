@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<!-- header -->
+<header>
+  {% include nav.html %}
+  <!-- hero image -->
+  <div class="header__hero">
+    <div>
+      <h3 class="header__h3">
+        Made <br>
+        For <br>
+        The <br>
+        <strong>People</strong>
+      </h3>
+      <p>
+        <a href="{{ site.baseurl }}/mens-shop.html" class="header__button">Shop</a>
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- main -->
+<main>
+  <!-- category container -->
+  <div class="category">
+    <h3>SHOP NOW!</h3>
+    <div class="category__container">
+      <div class="category__links">
+        <h4>MENS</h4>
+        {% for data in site.data.category-men %}
+          <p><a href="{{ site.baseurl }}/{{data.link}}">{{data.p}}</a></p>
+        {% endfor %}
+      </div>
+      <div class="category__links">
+        <h4>WOMENS</h4>
+        {% for data in site.data.category-women %}
+          <p><a href="{{ site.baseurl }}/{{data.link}}">{{data.p}}</a></p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!-- blog container -->
+  <div class="blog">
+    <div class="blog__header">
+      <p>stay in the know</p>
+      <h3>Latest Store News</h3>
+    </div>
+    <div class="blog__container">
+      {% for post in site.categories['blog'] %}
+          <div>
+            <a href="{{ post.url }}">
+              <img src="{{site.baseurl}}{{post.imgSource}}" alt="{{post.imgAlt}}">
+              <p>{{post.meta}}</p>
+              <div class="blog__btn">
+                <a href="{{ post.url }}">READ MORE</a>
+              </div>
+            </a>
+          </div>
+      {% endfor %}
+    </div>
+    <div class="blog__button">
+      <p>
+        <a href="{{ site.baseurl }}/blog.html">SEE MORE!</a>
+      </p>
+    </div>
+  </div>
+</main>
+
+<!-- footer -->
+<footer>
+  {% include footer.html %}
+</footer>

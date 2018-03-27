@@ -1,0 +1,41 @@
+<div class="shop-container">
+  {% if page.url contains 'mens' %}
+    {% if page.url contains 'clothes' %}
+      {% assign currentCollection = site.mens_clothes %}
+    {% elsif page.url contains 'shoe' %}
+      {% assign currentCollection = site.mens_shoe %}
+    {% elsif page.url contains 'sweaters' %}
+        {% assign currentCollection = site.mens_sweaters %}
+    {% endif %}
+  {% endif %}
+
+  {% if page.url contains 'women' %}
+    {% if page.url contains 'clothes' %}
+      {% assign currentCollection = site.women_clothes %}
+    {% elsif page.url contains 'shoe' %}
+      {% assign currentCollection = site.women_shoe %}
+    {% elsif page.url contains 'sweaters' %}
+        {% assign currentCollection = site.women_sweaters %}
+    {% endif %}
+  {% endif %}
+
+
+
+  {% for item in currentCollection %}
+    {% if item.main %}
+      <div class="shop-item">
+        <div>
+          <a href="{{ site.baseurl }}{{ item.url }}">
+            <img src="{{ site.baseurl }}{{ item.pic-url }}" alt="{{ item.title }}">
+          </a>
+        </div>
+        <div>
+          <a href="{{ site.baseurl }}{{ item.url }}">
+            <h4>{{ item.type }}</h4>
+            <p>${{ item.price }}</p>
+          </a>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

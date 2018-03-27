@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<header>
+  {% include nav.html %}
+</header>
+{% include sub-nav-shop.html %}
+
+<section class="blog__content">
+  <div class="blog__center">
+    <h1 class="blog__content-title">{{ page.title }}</h1>
+    {{ content }}
+  </div>
+</section>
+
+<footer>
+  {% include footer.html %}
+</footer>

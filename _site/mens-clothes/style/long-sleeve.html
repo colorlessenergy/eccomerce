@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Best Shop N.A.</title>
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" defer></script>
+  <!-- font-awesome cdn -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" defer></script>
+  <!-- snipcart cdn -->
+  <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="MTMxM2JjYmMtYmIyNi00OTEzLThhOWItOWQ0Mjg0NDU1MTliNjM2NDYxMTc5MDAzNzUxOTc3" defer></script>
+  <!-- snipcart styles cdn -->
+  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet">
+  <!-- custom css -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- custom js -->
+  <script src="/js/main.js" defer></script>
+  <script src="/js/responsive-nav.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <a href="#" class="snipcart-checkout">
+  <div class="cart">
+    <p class="snipcart-summary"><span class="snipcart-total-items">0</span></p>
+    <i class="fas fa-shopping-cart"></i>
+  </div>
+</a>
+
+    <div class="container__content">
+      
+
+
+
+<header>
+  <!-- navigation -->
+<div class="nav">
+  <div>
+    <h4>Best Shop N.A.</h4>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#" class="snipcart-checkout">Cart</a></li>
+      <li><a href="" class="snipcart-user-profile">Dashboard</a></li>
+    </ul>
+    <ul>
+      <li><a href="/">Shop /</a></li>
+      <li><a href="/mens-shop.html">Men /</a></li>
+      <li><a href="/women-shop.html">Women /</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav__responsive">
+    <ul>
+      <li><a href="/">Shop /</a></li>
+      <li><a href="/mens-shop.html">Men /</a></li>
+      <li><a href="/women-shop.html">Women /</a></li>
+    </ul>
+  </div>
+
+  <svg id="icon-hamburger" viewBox="0 0 26 17" width="100%" height="100%">
+    <rect x="3" width="20" height="3" rx="1.5" ry="1.5"></rect>
+    <rect x="3" y="14" width="20" height="3" rx="1.5" ry="1.5"></rect>
+    <rect y="7" width="26" height="3" rx="1.5" ry="1.5"></rect>
+  </svg>
+</div>
+
+</header>
+<!-- Loop through all the post and pull the name of the current product -->
+
+<ul class="sub-nav">
+  <li><a href="/">Home</a></li>
+  
+    <li><a href="/mens-shop.html">Mens Shop</a></li>
+  
+  
+    <li><a href="/mens-clothes.html">Mens clothes</a></li>
+  
+  
+  
+</ul>
+
+
+  <!-- loops through all the posts and check if the value of main is true
+  and checks if the type is included in the url.
+  pulls the data into an image -->
+  <div class="whole-side">
+    <div class="left-side">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <img id="big-img" src="/img/long-sleeve-main.jpg" alt="">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    <div class="right-side">
+
+      <!-- loops through all the post and check if the value of 'main' is true
+      then pulls that data and puts it in the separate tags -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p>$20.00</p>
+      <h2>long-sleeve</h2>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <!-- loops through post and loads all the other images related to the main product -->
+
+      <div class="variety-list">
+        <p>Color: </p>
+        <div class="style-list">
+          
+          
+          <div>
+            <a href="/mens-clothes/color/blue-long-sleeve">
+              <p>blue long sleeve</p>
+              <img class="product__small" src="/img/blue-long-sleeve.jpg" alt="blue long sleeve">
+            </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <div>
+            <a href="/mens-clothes/color/pink-long-sleeve">
+              <p>pink</p>
+              <img class="product__small" src="/img/pink-long-sleeve.jpg" alt="pink">
+            </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <div>
+            <a href="/mens-clothes/style/long-sleeve">
+              <p>light blue</p>
+              <img class="product__small" src="/img/long-sleeve-main.jpg" alt="light blue">
+            </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+      </div>
+
+      <!-- snipcart additions to quantity and size -->
+      <div class="product__view">
+        <p>size: </p>
+
+        
+        <select id="my-size">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <option>Small</option>
+          
+          <option>Medium</option>
+          
+          <option>Large</option>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </select>
+        
+      </div>
+
+      <div class="product__view">
+        <p>Quantity: </p>
+        <input type="number" id="my-quantity" value="1" min="0">
+      </div>
+
+
+
+      <!-- loops through the post and checks if the type of the product is the same as the url -->
+
+      
+      
+      
+      <button id="" data-item-custom2-name="size"
+      data-item-custom2-options="Small|Medium|Large" class="snipcart-add-item "
+      data-item-id="long-sleeve_BLUE" data-item-url="/mens-clothes/style/long-sleeve" data-item-name="blue long sleeve" data-item-price="20.00"
+      data-item-image="/img/blue-long-sleeve.jpg" data-item-quantity="1">
+      Buy now
+    </button>
+    
+
+    
+      
+
+    
+      
+
+    
+      
+      
+      <button id="" data-item-custom2-name="size"
+      data-item-custom2-options="Small|Medium|Large" class="snipcart-add-item "
+      data-item-id="long-sleeve_PINK" data-item-url="/mens-clothes/style/long-sleeve" data-item-name="pink" data-item-price="20.00"
+      data-item-image="/img/pink-long-sleeve.jpg" data-item-quantity="1">
+      Buy now
+    </button>
+    
+
+    
+      
+
+    
+      
+
+    
+      
+
+    
+      
+      
+      <button id="my-button" data-item-custom2-name="size"
+      data-item-custom2-options="Small|Medium|Large" class="snipcart-add-item active"
+      data-item-id="long-sleeve_LIGHT_BLUE" data-item-url="/mens-clothes/style/long-sleeve" data-item-name="light blue" data-item-price="20.00"
+      data-item-image="/img/long-sleeve-main.jpg" data-item-quantity="1">
+      Buy now
+    </button>
+    
+
+    
+      
+
+    
+      
+
+    
+      
+
+    
+  </div>
+</div>
+<footer>
+  <!-- first box -->
+<div class="footer__first">
+  <ul>
+    <li class="footer__heading">Shop</li>
+    <li class="footer__subheading">By Category</li>
+    <li>
+      <a href="/mens-shop.html">MENS</a>
+    </li>
+    <li>
+      <a href="/womens-shop.html">WOMENS</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li class="footer__heading">Contact</li>
+    <li>
+      <span class="footer__subheading">Email</span>
+      <br>
+      <a href="#">Contact US</a>
+    </li>
+    <li>
+      <span class="footer__subheading">Telephone</span>
+      <br>
+      <a href="tel:555-555-5555">555-555-5555</a>
+    </li>
+    <li>
+      <span class="footer__subheading">Email</span>
+      <br>
+      <a href="#">Contact Us</a>
+    </li>
+    <li>
+      <span class="footer__subheading">Adress</span>
+      <br>
+      1261 Pin Oak Drive
+      <br>
+      Long Beach, CA 90808
+    </li>
+    <li>
+      <span class="footer__subheading">Hours</span>
+      <br>
+      M - F 6:00am - 8:00pm PST
+    </li>
+  </ul>
+</div>
+<!-- second box -->
+<div class="footer__second">
+  <p>Follow Us</p>
+  <ul>
+    <li>
+      <a href="https://facebook.com">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram.com">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- third box -->
+<div class="footer__third">
+  <h4>Best Shop N.A.</h4>
+  <p>&copy; Best Shop N.A.</p>
+</div>
+
+</footer>
+
+    </div>
+  </div>
+</body>
+</html>

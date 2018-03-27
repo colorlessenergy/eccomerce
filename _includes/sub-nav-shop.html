@@ -1,0 +1,21 @@
+<!-- Loop through all the post and pull the name of the current product -->
+
+<ul class="sub-nav">
+  <li><a href="{{site.baseurl}}/">Home</a></li>
+  {% if page.url contains 'mens' %}
+    <li><a href="{{site.baseurl}}/mens-shop.html">Mens Shop</a></li>
+  {% endif %}
+  {% if page.url contains 'mens-clothes' %}
+    <li><a href="{{site.baseurl}}/mens-clothes.html">Mens clothes</a></li>
+  {% elsif page.url contains 'mens-shoe' %}
+    <li><a href="{{site.baseurl}}/mens-shoes.html">Mens shoes</a></li>
+  {% endif %}
+  {% if page.url contains 'women' %}
+    <li><a href="{{site.baseurl}}/women-shop.html">Womens Shop</a></li>
+  {% endif %}
+  {% if page.url contains 'women-clothes' %}
+    <li><a href="{{site.baseurl}}/women-clothes.html">Womens clothes</a></li>
+  {% elsif page.url contains 'women-shoes' %}
+    <li><a href="{{site.baseurl}}/women-shoes.html">Womens shoes</a></li>
+  {% endif %}
+</ul>

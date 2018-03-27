@@ -1,0 +1,288 @@
+/*CART*/
+.cart {
+  background-color: #f00;
+
+  color: #000;
+  position: fixed;
+  right: 0;
+  top: 25%;
+
+  padding: 10px;
+  z-index: 2;
+}
+
+.cart:hover {
+  color: #fff;
+}
+
+/*HEADER*/
+.header__h3 {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: normal;
+  padding: 15px;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+
+.nav > div,
+.nav nav {
+  margin: 0 20px;
+}
+.nav nav {
+  flex: 10;
+}
+
+.nav__responsive {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  transform: translateX(107%);
+  transition: transform 0.5s;
+}
+
+.header__button {
+  background-color: #f00;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+/*BLOG STYLES*/
+.blog,
+.container__content {
+  background-color: #F1F2ED;
+}
+
+.blog__container,
+.category,
+.blog {
+  padding: 30px 0;
+}
+
+.active {
+    display: block;
+}
+
+/*.shop__btn,*/
+.blog__btn {
+  margin-top: 20px;
+}
+
+/*.shop__btn a,*/
+.blog__btn a {
+  border: 3px solid gray;
+  padding: 10px;
+  font-variant: small-caps;
+  text-decoration: none;
+  font-size: 12px;
+  color: #4d4d4d;
+}
+
+/*.shop__btn a,*/
+.blog__btn a {
+  transition: all 0.5s;
+}
+
+/*.shop__btn a:hover,*/
+.blog__btn a:hover {
+  border-color: #c9192e;
+  color: #c9192e;
+}
+
+/*CATEGORY*/
+.category {
+  background-color: white;
+}
+
+.category__container {
+  justify-content: space-evenly;
+}
+
+.category__links h4,
+.category__links p {
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.2px;
+  margin: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.category__links h4 {
+  color: #fff;
+}
+
+.category__links a {
+  color: #85bee3;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.header__button:hover,
+.category__links a:hover {
+  text-decoration: underline;
+}
+
+/*BLOG*/
+.blog__header {
+  text-align: center;
+}
+
+.blog__header p {
+  color: #c9192e;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.blog__container > div p,
+.blog__container > div .blog__btn {
+  text-align: left;
+}
+
+.blog__container a {
+  color: #000;
+  text-decoration: none;
+}
+
+.blog__content {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.blog__content p {
+  line-height: 1.6;
+}
+
+.blog__center {
+  border-right: 1px solid gray;
+  max-width: 50%;
+  padding: 0 60px 0 10px;
+}
+
+
+.blog__content-title {
+  font-size: 3em;
+}
+
+.blog__btn a {
+  border: none;
+  color: #589bc6;
+  padding: 0;
+}
+
+.blog__button {
+  margin: 20px 0 10px 0;
+  text-align: center;
+}
+
+.blog__button p {
+  background-color: #222;
+  display: inline-block;
+  margin: 0;
+}
+
+.blog__button a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+.blog__button a:hover {
+  background-color: #000;
+}
+
+/*FOOTER*/
+.footer__first,
+.footer__second,
+.footer__third {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.footer__first ul,
+.footer__second ul,
+.footer__third ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__second {
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__second ul {
+  width: 80%;
+
+}
+.footer__second li {
+  font-size: 40px;
+}
+
+.footer__third {
+  align-items: center;
+  text-align: center;
+}
+
+.footer__third h4,
+.footer__third p {
+  width: 30%;
+}
+
+.footer__heading {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer__subheading {
+  color: #fff;
+}
+
+.show {
+  transform: translateX(0%);
+}
+
+.display-shop {
+  display: flex;
+  flex-flow: wrap;
+}
+
+
+@media screen and (max-width: 900px) {
+  .nav > div,
+  .nav nav {
+    margin: 0;
+  }
+  .blog__center {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blog__center {
+    max-width: 100%;
+    border: none;
+  }
+
+  header h4 {
+    margin: 0;
+  }
+}

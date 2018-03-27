@@ -1,0 +1,27 @@
+baseurl: ''
+exclude: ['README.md']
+
+collections:
+  mens_shoe:
+    output: true
+    permalink: /mens-shoe/:path
+
+  mens_clothes:
+    output: true
+    permalink: /mens-clothes/:path
+
+  mens_sweaters:
+    output: true
+    permalink: /mens-sweaters/:path
+
+  women_shoe:
+    output: true
+    permalink: /women-shoe/:path
+
+  women_clothes:
+    output: true
+    permalink: /women-clothes/:path
+
+  women_sweaters:
+    output: true
+    permalink: /women-sweaters/:path

@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+{% if page.url contains 'mens' %}
+  {% if page.url contains 'clothes' %}
+    {% assign currentCollection = site.mens_clothes %}
+  {% elsif page.url contains 'shoe' %}
+    {% assign currentCollection = site.mens_shoe %}
+  {% elsif page.url contains 'sweaters' %}
+      {% assign currentCollection = site.mens_sweaters %}
+  {% endif %}
+{% endif %}
+
+{% if page.url contains 'women' %}
+{% if page.url contains 'clothes' %}
+  {% assign currentCollection = site.women_clothes %}
+{% elsif page.url contains 'shoe' %}
+  {% assign currentCollection = site.women_shoe %}
+{% elsif page.url contains 'sweaters' %}
+    {% assign currentCollection = site.women_sweaters %}
+{% endif %}
+{% endif %}
+
+<header>
+  {% include nav.html %}
+</header>
+{% include sub-nav-shop.html %}
+
+  <!-- loops through all the posts and check if the value of main is true
+  and checks if the type is included in the url.
+  pulls the data into an image -->
+  <div class="whole-side">
+    <div class="left-side">
+      {% for item in currentCollection %}
+      {% if item.main == true %}
+      {% if page.url contains item.type %}
+      <img id="big-img" src="{{site.baseurl}}{{ item.pic-url }}" alt="">
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="right-side">
+
+      <!-- loops through all the post and check if the value of 'main' is true
+      then pulls that data and puts it in the separate tags -->
+      {% for item in currentCollection %}
+      {% if item.main == true %}
+      {% if page.url contains item.type %}
+      <p>${{ item.price }}</p>
+      <h2>{{ item.type }}</h2>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+
+      <!-- loops through post and loads all the other images related to the main product -->
+
+      <div class="variety-list">
+        <p>Color: </p>
+        <div class="style-list">
+          {% for item in currentCollection %}
+          {% if page.url contains item.type %}
+          <div>
+            <a href="{{ item.url }}">
+              <p>{{ item.title }}</p>
+              <img class="product__small" src="{{site.baseurl}}{{ item.pic-url }}" alt="{{ item.title }}">
+            </a>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- snipcart additions to quantity and size -->
+      <div class="product__view">
+        <p>size: </p>
+
+        {% if page.url contains 'mens' %}
+        <select id="my-size">
+          {% for item in currentCollection %}
+          {% if item.main == true %}
+          {% if page.url contains item.type %}
+          {% assign currentSize = item.custom-options | split: '|' %}
+          {% for option in currentSize %}
+          <option>{{ option }}</option>
+          {% endfor %}
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+        </select>
+        {% else %}
+        <select id="my-size">
+          {% for item in currentCollection %}
+          {% if item.main == true %}
+          {% if page.url contains item.type %}
+          {% assign currentSize = item.custom-options | split: '|' %}
+          {% for option in currentSize %}
+          <option>{{ option }}</option>
+          {% endfor %}
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+        </select>
+        {% endif %}
+      </div>
+
+      <div class="product__view">
+        <p>Quantity: </p>
+        <input type="number" id="my-quantity" value="1" min="0">
+      </div>
+
+
+
+      <!-- loops through the post and checks if the type of the product is the same as the url -->
+
+      {% for item in currentCollection %}
+      {% if page.url contains item.type %}
+      {% if item.main == true %}
+      {% assign main_true = true %}
+      {% else %}
+      {% assign main_true = false %}
+      {% endif %}
+      <button id="{% if main_true %}my-button{% endif %}" data-item-custom2-name="{{ item.custom-name }}"
+      data-item-custom2-options="{{ item.custom-options }}" class="snipcart-add-item {% if main_true %}active{% endif %}"
+      data-item-id="{{ item.custom-id }}" data-item-url="{{ page.url }}" data-item-name="{{ item.title }}" data-item-price="{{ item.price }}"
+      data-item-image="{{site.baseurl}}{{ item.pic-url }}" data-item-quantity="1">
+      Buy now
+    </button>
+    {% endif %}
+
+    {% endfor %}
+  </div>
+</div>
+<footer>
+  {% include footer.html %}
+</footer>

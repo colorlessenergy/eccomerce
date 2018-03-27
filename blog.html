@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<header>
+  {% include nav.html %}
+</header>
+{% include sub-nav-shop.html %}
+
+<main>
+  <div class="blog__container">
+    {% for post in site.categories['blog'] %}
+        <div>
+          <a href="{{ post.url }}">
+            <img src="{{site.baseurl}}{{post.imgSource}}" alt="{{post.imgAlt}}">
+            <p>{{post.meta}}</p>
+            <div class="blog__btn">
+              <a href="{{ post.url }}">READ MORE</a>
+            </div>
+          </a>
+        </div>
+    {% endfor %}
+  </div>
+</main>
+
+<footer>
+  {% include footer.html %}
+</footer>
