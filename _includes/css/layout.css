@@ -18,6 +18,13 @@ p {
   flex: 2;
 }
 
+.color {
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+}
+
 /*HEADER*/
 .header__hero {
       background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)), url({{ site.baseurl }}/img/hero.jpg);

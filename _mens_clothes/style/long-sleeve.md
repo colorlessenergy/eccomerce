@@ -10,4 +10,5 @@ main: true
 type: long-sleeve
 layout: products
 thumbnail: /img/long-sleeve-main.jpg
+color: lightblue
 ---

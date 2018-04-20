@@ -10,4 +10,5 @@ main: false
 type: vans
 layout: product-varieties
 thumbnail: /img/rumba-red-vans.jpg
+color: red
 ---

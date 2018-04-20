@@ -10,4 +10,5 @@ main: true
 type: short-sleeve
 layout: products
 thumbnail: /img/black-short-sleeve.jpg
+color: black
 ---

@@ -10,4 +10,5 @@ main: false
 type: vans
 thumbnail: /img/black-vans.jpg
 layout: product-varieties
+color: black
 ---

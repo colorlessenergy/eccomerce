@@ -57,7 +57,9 @@ layout: default
           <div>
             <a href="{{ item.url }}">
               <p>{{ item.title }}</p>
-              <img class="product__small" src="{{site.baseurl}}{{ item.pic-url }}" alt="{{ item.title }}">
+              <div class="color" style="background-color: {{ item.color }}">
+
+              </div>
             </a>
           </div>
           {% endif %}

@@ -10,5 +10,5 @@ main: true
 type: vneck_white
 layout: products
 thumbnail: /img/vneck_white.jpeg
+color: white
 ---
-

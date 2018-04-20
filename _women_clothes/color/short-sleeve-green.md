@@ -10,4 +10,5 @@ main: false
 type: short-sleeve
 layout: product-varieties
 thumbnail: /img/green-short-sleeve.jpeg
+color: green
 ---

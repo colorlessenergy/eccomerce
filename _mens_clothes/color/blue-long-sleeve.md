@@ -10,4 +10,5 @@ main: false
 type: long-sleeve
 layout: product-varieties
 thumbnail: /img/blue-long-sleeve.jpg
+color: blue
 ---

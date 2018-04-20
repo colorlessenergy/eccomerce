@@ -10,4 +10,5 @@ main: false
 type: long-sleeve
 layout: product-varieties
 thumbnail: /img/pink-long-sleeve.jpg
+color: pink
 ---

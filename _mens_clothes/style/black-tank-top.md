@@ -10,4 +10,5 @@ main: true
 type: tank-top
 layout: products
 thumbnail: /img/tank-top_black.jpg
+color: black
 ---

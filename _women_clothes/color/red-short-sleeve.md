@@ -10,4 +10,5 @@ type: short-sleeve
 main: false
 layout: product-varieties
 thumbnail: /img/red-short-sleeve.jpg
+color: red
 ---

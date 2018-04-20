@@ -10,4 +10,5 @@ main: false
 type: woolen-sweater
 layout: product-varieties
 thumbnail: /img/orange-woolen-sweater.jpg
+color: orange
 ---

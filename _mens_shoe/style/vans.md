@@ -11,4 +11,5 @@ main: true
 type: vans
 layout: products
 thumbnail: /img/white-vans.jpg
+color: white
 ---

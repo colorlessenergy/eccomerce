@@ -10,4 +10,5 @@ main: false
 type: converse
 layout: product-varieties
 thumbnail: /img/pink-converse.jpg
+color: pink
 ---
