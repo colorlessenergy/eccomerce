@@ -9,8 +9,10 @@ $('#my-quantity').change(function () {
     $('#my-button').data('item-quantity', $(this).val());
 });
 
-$("#my-quantity").keypress(function (evt) {
-    evt.preventDefault();
+$("#my-quantity").keyup(function (evt) {
+    if (Number($("#my-quantity").val()) < 0 && $("#my-quantity").val() != ""){
+      $("#my-quantity")[0].value = 1;
+    }
 });
 
 $('.product__small').on('click', function (event) {
