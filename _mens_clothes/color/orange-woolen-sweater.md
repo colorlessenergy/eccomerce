@@ -2,7 +2,7 @@
 custom-name: size
 custom-options: Small|Medium|Large
 custom-id: Sweater_ORANGE
-title: orange woolen sweater
+title: orange
 price: '20.00'
 pic-url: /img/orange-woolen-sweater.jpg
 categories: mens_clothes

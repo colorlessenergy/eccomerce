@@ -10,7 +10,7 @@ $('#my-quantity').change(function () {
 });
 
 $("#my-quantity").keyup(function (evt) {
-    if (Number($("#my-quantity").val()) < 0 && $("#my-quantity").val() != ""){
+    if ($("#my-quantity")[0].value == ""){
       $("#my-quantity")[0].value = 1;
     }
 });

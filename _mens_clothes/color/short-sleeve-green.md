@@ -2,7 +2,7 @@
 custom-name: size
 custom-options: Small|Medium|Large
 custom-id: short-sleeve-green
-title: short-sleeve-green
+title: green
 price: '5000'
 pic-url: /img/green-short-sleeve.jpeg
 categories: mens-clothes

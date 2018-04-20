@@ -2,7 +2,7 @@
 custom-name: size
 custom-options: Small|Medium|Large
 custom-id: vneck_white
-title: vneck_white
+title: white
 price: '100'
 pic-url: /img/vneck_white.jpeg
 categories: mens-clothes

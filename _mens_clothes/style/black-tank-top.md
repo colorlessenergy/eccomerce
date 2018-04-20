@@ -2,7 +2,7 @@
 custom-name: size
 custom-options: Small|Medium|Large
 custom-id: tank-top_black
-title: black tank top
+title: black
 price: '200'
 pic-url: /img/tank-top_black.jpg
 categories: mens-clothes

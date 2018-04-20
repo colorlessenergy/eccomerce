@@ -2,7 +2,7 @@
 custom-name: size
 custom-options: Small|Medium|Large
 custom-id: short_sleeve_BLACK
-title: short sleeve shirt
+title: black
 price: '20.00'
 pic-url: /img/black-short-sleeve.jpg
 categories: mens-clothes

@@ -2,7 +2,7 @@
 custom-name: size
 custom-options: 6|7|8|9
 custom-id: shoe_green
-title: green converse
+title: green
 price: '20.00'
 pic-url: /img/green-converse.png
 =categories: mens_shoe

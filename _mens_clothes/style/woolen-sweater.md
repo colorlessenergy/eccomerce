@@ -2,7 +2,7 @@
 custom-name: size
 custom-options: Small|Medium|Large
 custom-id: Sweater_YELLOW
-title: yellow woolen sweater
+title: yellow
 price: '20.00'
 pic-url: /img/yellow-woolen-sweater.jpg
 categories: mens_clothes

@@ -2,7 +2,7 @@
 custom-name: size
 custom-options: Small|Medium|Large
 custom-id: long-sleeve_BLUE
-title: blue long sleeve
+title: blue
 price: '20.00'
 pic-url: /img/blue-long-sleeve.jpg
 categories: mens-clothes
